@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIS.CSS"/>
+    <title>Adoption</title>
+    
+</head>
+<body>
+    <div class="container">
+        <nav></nav>
+        <section>
+            <div class="sec_container">
+        <div class="form-wrapper">
+            <div class="card">
+            <div class="card-header">
+                <div id="forLogin" class="form-header active">Login</div>
+                <div id="forRegister" class="form-header">Register</div>
+                </div>
+            
+            <div class="card-body" id="formContainer">
+                <form id="formLogin">
+                <input type="text" class="form-control" placeholder="@user"/>
+                <input type="password" class="form-control" placeholder="@password"/>
+                <button class="formButton">Connetion</button>
+            </form>
+            <form id="registerForm" class="toggleForm">
+            <input type="text" class="form-control" placeholder="@user"/>
+            <input type="password" class="form-control" placeholder="@password"/>
+            <input type="password" class="form-control" placeholder="@confirm password"/>
+            <button class="formButton">Resgistration</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    <script>
+       
+        function _(e){
+            return document.getElementById(e);
+
+        }
+        function showForm() {
+            document.querySelector(' .form-Wrapper .card').classList.toggle('show');
+        }
+        document
+    </script>
+</body>
+</html>

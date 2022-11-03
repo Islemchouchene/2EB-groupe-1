@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+section { 
+    margin-top: 50px;
+}
+body {
+    position: relative;
+   
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header { display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(221, 237, 252);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+ .menu{display: flex;}
+
+.logo{color: rosybrown;
+    font-weight: 700;
+    font-size: 25px;}
+
+.logo span{color: #273e60;}
+
+.menu li{ margin: 0 15px ;
+list-style: none;
+}
+
+.menu li a{font-size: 20px;
+    text-decoration: 0;
+    color: #273e60;
+    position: relative;
+
+}
+    .menu li a::before { position:absolute;
+   top: -5px;
+    right: 0;
+    content:"";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: rosybrown;
+    transition: 0.5s; }
+    .menu li a :hover::before{
+        width: 100%;
+    }
+    
+    .menu li a:after { position:absolute;
+        bottom: -5px;
+         right: 0;
+         content:"";
+         width: 0;
+         height: 2px;
+         border-radius: 6px;
+         background-color: rosybrown;
+         transition: 0.5s; }
+         .menu li a:hover:after{
+             width: 100%;
+         }
+         /*Scrollbar CSS */
+         ::-webkit-scrollbar{
+            width: 8px;
+         }
+         ::-webkit-scrollbar-thumb{
+            background-color: rosybrown;
+         }
+#Adopt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.05);
+    padding: 50px 10px;
+
+}
+.mini_title{
+    margin-top:25px ;
+    font-size: 16px;
+    color: rosybrown;
+text-transform: capitalize;
+}
+.title{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #273e60;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+.dishes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+
+}
+.dishes .dish{
+    height: 650px;
+    width: 30%;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dishes .dish img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 15px;
+
+}
+
+.dishes .dish p {
+    text-align: center;
+    font-size: 25px;
+    color: darkblue;
+}
+.dishes .dish h1 {
+    text-align: center;
+    font-size: 18px;
+    color:black;
+}
+
+.dishes .dish a {
+    margin-top: 15px;
+    font-size: 22px;
+    text-decoration: 0;
+    background-color: rosybrown;
+    padding: 5px 60px;
+    color: white;
+    border-radius: 5px;}

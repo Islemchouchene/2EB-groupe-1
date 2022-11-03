@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+section { 
+    margin-top: 50px;
+}
+body {
+    position: relative;
+   
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header { display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(221, 237, 252);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+ .menu{display: flex;}
+
+.logo{color: rosybrown;
+    font-weight: 700;
+    font-size: 25px;}
+
+.logo span{color: #273e60;}
+
+.menu li{ margin: 0 15px ;
+list-style: none;
+}
+
+.menu li a{font-size: 20px;
+    text-decoration: 0;
+    color: #273e60;
+    position: relative;
+
+}
+    .menu li a::before { position:absolute;
+   top: -5px;
+    right: 0;
+    content:"";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: rosybrown;
+    transition: 0.5s; }
+    .menu li a :hover::before{
+        width: 100%;
+    }
+    
+    .menu li a:after { position:absolute;
+        bottom: -5px;
+         right: 0;
+         content:"";
+         width: 0;
+         height: 2px;
+         border-radius: 6px;
+         background-color: rosybrown;
+         transition: 0.5s; }
+         .menu li a:hover:after{
+             width: 100%;
+         }
+         /*Scrollbar CSS */
+         ::-webkit-scrollbar{
+            width: 8px;
+         }
+         ::-webkit-scrollbar-thumb{
+            background-color: rosybrown;
+         }
+         /*home CSS*/
+         #home{
+             margin-top: 50px;
+             display: flex;
+             align-items: center;
+             margin-left: 10%;
+             margin-right: 10%;
+             height: calc(120vh - 50px);
+             justify-content: space-between;
+         }
+         #home .left {
+             width: 40%;
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+         }
+         #home .left h4 {
+             font-size: 30px;
+             color: rosybrown;
+         }
+         #home .left h1 {
+            margin-top: 30px;
+             font-size: 40px;
+         }
+         #home .left button{
+            margin-top: 40px;
+            width: max-content;
+            padding: 10px 10px;
+            background-color: rosybrown;
+            border: 0;
+            transition: 0.5;
+            position: relative;
+            cursor: pointer;
+        }
+        #home .left button a{
+            text-decoration: 0;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.5s;
+
+        }
+        #home .left button::before{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            content: "";
+            height: 100%;
+            width: 100%;
+            z-index: -1;                      
+            background-color:  rgb(221, 237, 252);
+        }
+        #home .left button:hover a{
+            letter-spacing: 1px;
+        }
+        #home.right {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+#home .right img{
+    height:700px ;
+    width: 700px;
+    animation: animate 2s linear;
+    transition: 0.5S;
+}
+
+
+/*animation image */
+@keyframes animate{
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+
+
+
+
+#reservation{
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;}
+    .mini_title{
+        margin-top:25px ;
+        font-size: 20px;
+        color: rosybrown;
+    text-transform: capitalize;
+    }
+    .title{
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #273e60;
+        margin-bottom: 25px;
+        text-align: center;
+    
+    }
+
+#reservation form{
+    display: flex;
+    background-color:aliceblue;
+    padding: 24px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation form label{
+    margin-bottom: 15px;
+    font-size: 20px;
+
+   
+}       
+#reservation form:focus{
+    outline: 1px solid rosybrown;
+}
+
+#reservation form input[type="submit"]{
+    margin-top: 15px;
+    color: #fff;
+    background-color: rosybrown;
+    border: 1px solid rosybrown;
+
+}
