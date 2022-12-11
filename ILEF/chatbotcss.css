@@ -1,0 +1,138 @@
+
+body{
+    background-color:  rgb(221, 237, 252);
+}
+.bar{
+    background-color:pink;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 334px;
+    text-align: letf;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid black;
+    border-bottom: none;
+    
+
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+
+}
+
+.fullChat{
+    width: 334px;
+    background-color: lightgray;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.container-out{
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+
+}
+
+.container-chat{
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+
+}
+
+.container-chat::-webkit-scrollbar{
+    display: none;
+
+}
+
+.chatBox{
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 10px 10px;
+
+}
+
+#userInput{
+    width: 100%;
+
+}
+
+.input-box{
+    float: left;
+    border: solid 1px black;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    outline: none;
+
+}
+
+.userInput{
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+
+}
+
+.userInput span{
+    line-height: 1.5em;
+    display: inline-block;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards; 
+
+}
+
+.chatbotText{
+    color: white;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.chatbotText span{
+    line-height: 1.5em;
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+
+}

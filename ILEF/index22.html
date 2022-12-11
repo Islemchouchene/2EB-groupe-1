@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>chatbot</title>
+        
+        <link rel="stylesheet" href="chatbotcss.css">
+
+                 
+    </head>
+    <body>
+
+    <div class="chatbot-bar">
+        <button id="chatButton" type="button" class="bar">click to Ask a question!
+            
+        </button>
+    
+     <div class="content">
+        <div class="fullChat">
+            <div class="container-out">
+                <div class="container-chat">
+                    <div id="chatBox">
+                        <h5 id="chatTime"></h5>
+                        <p id="firstText" class="chatbotText"><span>Loading...</span></p>
+                    </div>
+                    <div class="chat-input">
+                        <div id="userInput">
+                            <input type="text" id="textInput" class="input-box" name="msg" placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                            
+                        </div>
+                    </div>
+                    <div id="chat-bottom">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+    <script type="text/javascript" src="chatresponse.js"></script>
+    </body>
+
+</html>
